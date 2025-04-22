@@ -1,0 +1,22 @@
+# password
+a=input("enter any passward")
+dg=0
+sm=0
+up=0
+sp=0
+if(len(a)>7):
+    for i in a:
+        if(i.isupper()):
+            up=up+1
+        elif(i.islower()):
+            sm=sm+1
+        elif(i.isdigit()):
+            dg=dg+1
+        else:
+            sp=sp+1
+    if(up>0 and sm>0 and dg>0 and sp>0):
+        print("good password")
+    else:
+        print("bad password")
+else:
+    print("bad due to less number of characters")
